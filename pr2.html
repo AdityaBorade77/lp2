@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+  <head>
+    <title>College Timetable</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        margin: 10px;
+      }
+
+      header,
+      footer {
+        background: navy;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      nav {
+        background: gray;
+        padding: 10px;
+      }
+
+      nav a {
+        color: white;
+        margin: 10px;
+      }
+
+      .container {
+        display: flex;
+        gap: 10px;
+      }
+
+      main {
+        flex: 3;
+        padding: 10px;
+      }
+
+      aside {
+        flex: 1;
+        background: lightgray;
+        padding: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .box {
+        background: lightblue;
+        padding: 10px;
+        margin: 5px;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>ABC Engineering College</h1>
+      <p>Department of IT</p>
+    </header>
+
+    <nav>
+      <a href="#time">Timetable</a>
+      <a href="#infra">Infrastructure</a>
+      <a href="#media">Media</a>
+    </nav>
+
+    <div class="container">
+      <main>
+        <h2 id="time">Class Timetable</h2>
+
+        <table>
+          <caption>
+            Weekly Timetable
+          </caption>
+
+          <tr>
+            <th>Day</th>
+            <th>9-10</th>
+            <th>10-11</th>
+            <th>11-12</th>
+          </tr>
+
+          <tr>
+            <td>Monday</td>
+            <td>Java</td>
+            <td>DBMS</td>
+            <td rowspan="2">Lab</td>
+          </tr>
+
+          <tr>
+            <td>Tuesday</td>
+            <td>Python</td>
+            <td>CN</td>
+          </tr>
+
+          <tr>
+            <td>Wednesday</td>
+            <td colspan="2">Web Lab</td>
+            <td>OS</td>
+          </tr>
+        </table>
+
+        <h2 id="infra">Infrastructure</h2>
+
+        <div class="box">Computer Lab</div>
+
+        <div class="box">Library</div>
+
+        <div class="box">Wi-Fi Facility</div>
+
+        <h2>Subjects</h2>
+
+        <div class="box">Subject: <span>Java</span></div>
+
+        <div class="box">Subject: <span>Python</span></div>
+
+        <h2 id="media">Multimedia</h2>
+
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg" />
+        </audio>
+
+        <br /><br />
+
+        <video width="200" controls>
+          <source src="video.mp4" type="video/mp4" />
+        </video>
+      </main>
+
+      <aside>
+        <h3>Quick Links</h3>
+        <p>Admissions</p>
+        <p>Examinations</p>
+        <p>Placements</p>
+
+        <h3>Vision</h3>
+        <p>Quality Education</p>
+
+        <h3>Mission</h3>
+        <p>Develop Skilled Engineers</p>
+      </aside>
+    </div>
+
+    <footer>
+      <p>Contact: abc@gmail.com</p>
+    </footer>
+  </body>
+</html>
